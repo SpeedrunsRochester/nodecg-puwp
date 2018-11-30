@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "bid": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "integer"},
+        "name": {"type": "string"},
+        "total": {"type": "number"},
+        "parent": {"type": "integer"},
+        "game": {"type": "string"},
+        "category": {"type": "string"},
+        "description": {"type": "string"},
+        "end_time": {"type": "number"},
+        "goal": {"type": "number"},
+        "war": {"type": "boolean"},
+        "allow_user_options": {"type": "boolean"},
+        "options": {"type": "array", "items": {"$ref": "#/definitions/bid"}}
+      },
+      "required": ["id", "name", "total"]
+    }
+  },
+  "type": "array",
+  "items": {"$ref": "#/definitions/bid"}
+}
