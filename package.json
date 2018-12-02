@@ -19,7 +19,9 @@
         "name": "game-layout-override",
         "title": "Game Layout Override",
         "width": 2,
-        "file": "game-layout-override.html"
+        "file": "game-layout-override.html",
+        "headerColor": "#008BB9",
+        "workspace": "Scene Editing"
       }
     ]
   },
