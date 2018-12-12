@@ -12,8 +12,7 @@ let nodecg = require('./utils/nodecg-api-context').get();
 let donationTotal = nodecg.Replicant('donationTotal', {defaultValue: 0});
 let bids = nodecg.Replicant('bids', {defaultValue: []});
 
-// Get donation total from HTTPS API, backup for the repeater socket server.
-// We need to add both events together to get the correct total.
+// Get donation total from API.
 function updateDonationTotalFromAPI() {
     let url = nodecg.bundleConfig.tracker.url + "/" +
         nodecg.bundleConfig.tracker.eventId + "?json";
