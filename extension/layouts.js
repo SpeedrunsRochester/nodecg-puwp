@@ -10,20 +10,15 @@ const speedcontrolBundle = 'nodecg-speedcontrol';
 // code: the name used everywhere else, including the CSS file.
 // These are the default values, additional ones can be added in the config.
 const defaultLayouts = [
-    {name: '4:3 1 Player', code: '4_3-1p'},
-    {name: '4:3 2 Player', code: '4_3-2p'},
-    {name: '4:3 3 Player', code: '4_3-3p'},
+    {name: '4:3 1 Player', code: '4_3'},
+    {name: '4:3 2 Player', code: '4_3_2p'},
+    {name: '4:3 3 Player', code: '4_3_3p'},
     {name: '4:3 4 Player', code: '4_3-4p'},
-    {name: '16:9 1 Player', code: '16_9-1p'},
-    {name: '16:9 2 Player', code: '16_9-2p'},
-    {name: '16:9 3 Player', code: '16_9-3p'},
-    {name: '16:9 4 Player', code: '16_9-4p'},
-    {name: 'Game Boy 1 Player', code: 'gb-1p'},
-    {name: 'Game Boy 2 Player', code: 'gb-2p'},
-    {name: 'GBA 1 Player', code: 'gba-1p'},
-    {name: 'GBA 2 Player', code: 'gba-2p'},
-    {name: 'DS 1 Player', code: 'ds-1p'},
-    {name: '3DS 1 Player', code: '3ds-1p'},
+    {name: '16:9 1 Player', code: '16_9'},
+    {name: '16:9 2 Player', code: '16_9_2p'},
+    {name: '16:9 3 Player', code: '16_9_3p'},
+    {name: '16:9 4 Player', code: '16_9_4p'},
+    {name: '3:2 1 Player', code: '3_2'},
 ];
 
 // If we have extra layouts in the bundle config, add them at the end.
