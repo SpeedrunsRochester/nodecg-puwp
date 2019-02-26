@@ -13,17 +13,17 @@ const defaultLayouts = [
     {name: '4:3 1 Player', code: '4_3'},
     {name: '4:3 2 Player', code: '4_3_2p'},
     {name: '4:3 3 Player', code: '4_3_3p'},
-    {name: '4:3 4 Player', code: '4_3-4p'},
+    {name: '4:3 4 Player (Currently unused)', code: '4_3-4p'},
     {name: '16:9 1 Player', code: '16_9'},
-    {name: '16:9 2 Player', code: '16_9_2p'},
+    {name: '16:9 2 Player (Currently unused)', code: '16_9_2p'},
     {name: '16:9 3 Player', code: '16_9_3p'},
-    {name: '16:9 4 Player', code: '16_9_4p'},
+    {name: '16:9 4 Player (Currently unused)', code: '16_9_4p'},
     {name: '3:2 1 Player', code: '3_2'},
 ];
 
 // If we have extra layouts in the bundle config, add them at the end.
 if (nodecg.bundleConfig.extraLayouts) {
-    for (let l of nodecg.bundleConfig.extraLayouts) {
+    for (var l of nodecg.bundleConfig.extraLayouts) {
         defaultLayouts.push(l);
     }
 }
@@ -58,7 +58,7 @@ runDataActiveRun.on('change', (newVal, oldVal) => {
     }
 
     if (newVal) {
-        let layoutCode;
+        var layoutCode;
         if (newVal.customData && newVal.customData.layout) {
             layoutCode = newVal.customData.layout;
         } else {
@@ -91,8 +91,8 @@ function changeGameLayout(info, callback) {
 
 // Find information about layout based on it's code.
 function findLayoutInfo(code) {
-    let layoutInfo;
-    for (let layout of layouts.value) {
+    var layoutInfo;
+    for (var layout of layouts.value) {
         if (code && layout.code === code.toLowerCase()) {
             layoutInfo = layout;
             break;
