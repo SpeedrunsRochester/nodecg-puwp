@@ -1,9 +1,7 @@
 {
-  "name": "nodecg-puwp",
+  "name": "nodecg-srroc",
   "version": "1.0.0",
-  "description": "PUWP extra marathon features using NodeCG + Speedcontrol",
-  "homepage": "https://layout.powerupwithpride.org",
-  "author": "DorkmasterFlek",
+  "description": "SRROC extra marathon features using NodeCG + Speedcontrol (Forked from Power Up With Pride)",
   "dependencies": {
     "clone": "^2.1.2",
     "request": "^2.88.0",
