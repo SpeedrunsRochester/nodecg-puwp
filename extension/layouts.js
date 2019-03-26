@@ -19,6 +19,7 @@ const defaultLayouts = [
     {name: '16:9 3 Player', code: '16_9_3p'},
     {name: '16:9 4 Player (Currently unused)', code: '16_9_4p'},
     {name: '3:2 1 Player', code: '3_2'},
+	{name: '9:16 2 Player', code:'9_16_2p'}
 ];
 
 // If we have extra layouts in the bundle config, add them at the end.
