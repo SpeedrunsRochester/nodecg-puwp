@@ -43,7 +43,7 @@ Install both the Speedcontrol bundle and this one from GitHub using the followin
 
 ```bash
 nodecg install speedcontrol/nodecg-speedcontrol
-nodecg install PowerUpWithPride/nodecg-puwp
+nodecg install SpeedrunsRochester/nodecg-srroc
 ```
 
 This will create a `bundles` subfolder inside your new directory that contains git repositories of these two bundles.  You can now make whatever changes and tweaks you like from that location.
@@ -54,7 +54,7 @@ You can generate default config files for the bundles based on their config sche
 
 ```bash
 nodecg defaultconfig nodecg-speedcontrol
-nodecg defaultconfig nodecg-puwp
+nodecg defaultconfig nodecg-srroc
 ```
 
 This will create a new subdirectory called `cfg` for the config files.
