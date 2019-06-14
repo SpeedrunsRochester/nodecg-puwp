@@ -39,11 +39,12 @@ nodecg setup
 ```
 
 ### 4. Install bundles
-Install both the Speedcontrol bundle and this one from GitHub using the following commands:
+Install both the Speedcontrol bundle and this one from GitHub using the following commands (marathon layouts is the bundle for our marathons' layouts, and is optional):
 
 ```bash
 nodecg install speedcontrol/nodecg-speedcontrol
 nodecg install SpeedrunsRochester/nodecg-srroc
+nodecg install SpeedrunsRochester/marathon-layouts
 ```
 
 This will create a `bundles` subfolder inside your new directory that contains git repositories of these two bundles.  You can now make whatever changes and tweaks you like from that location.
